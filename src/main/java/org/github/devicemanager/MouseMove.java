@@ -41,6 +41,7 @@ public class MouseMove
         quitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //quitPressed=true;
+                exit(0);
             }
         });
         PointerInfo pointerInfo ;
@@ -69,7 +70,7 @@ public class MouseMove
 
     }
 
-    public static void sleep(int s) {
+    private static void sleep(int s) {
         try {
             Thread.sleep(s);
         } catch (Exception e) {
