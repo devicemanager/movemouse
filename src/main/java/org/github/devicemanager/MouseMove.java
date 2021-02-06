@@ -13,9 +13,7 @@ import static java.lang.System.exit;
  */
 public class MouseMove
 {
-    private boolean quitPressed=false;
-
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
         Robot robot = null;
         JFrame frame;
@@ -40,7 +38,6 @@ public class MouseMove
         cnt.add(quitButton);
         quitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //quitPressed=true;
                 exit(0);
             }
         });
